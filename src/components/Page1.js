@@ -1,11 +1,5 @@
 import { React, Component } from 'react';
-import { Link } from "react-router-dom";
-import {
-    Typography, AppBar,
-    Card, CardActions, CardContent, CardMedia,
-    CssBaseline, Grid, Toolbar, Container, Button
-}
-    from '@mui/material';
+
 import Header from './Header';
 import SectionMain from './Section1';
 import BackToHome from './BackToHome';

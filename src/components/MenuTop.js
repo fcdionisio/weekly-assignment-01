@@ -1,8 +1,7 @@
 import React from 'react';
 import {
     Typography, AppBar,
-    Card, CardActions, CardContent, CardMedia,
-    CssBaseline, Grid, Toolbar, Container, Button
+    CssBaseline,  Toolbar
 }
     from '@mui/material';
 import { PhotoCamera } from '@mui/icons-material';

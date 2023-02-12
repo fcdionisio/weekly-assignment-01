@@ -1,15 +1,13 @@
 import React from 'react';
 
 import {
-    Typography, AppBar,
-    Card, CardActions, CardContent, CardMedia,
-    CssBaseline, Grid, Toolbar, Container, Button
+    Typography, Container
 }
     from '@mui/material';
 
 
 const SectionMain = ({ sectionContent }) => {
-    console.log(sectionContent)
+    //console.log(sectionContent)
     let ctr = 0
     return (
         <>

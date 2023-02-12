@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import {
-    Typography, AppBar,
-    Card, CardActions, CardContent, CardMedia,
-    CssBaseline, Grid, Toolbar, Container, Button
+    Typography, Card, CardActions, CardContent, CardMedia,
+    Container, Button
 }
     from '@mui/material';
-import { Link } from "react-router-dom";
+
 import HOC from "./HOC";
 import myImage  from '../images/php-logo.png';
 

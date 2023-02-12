@@ -1,15 +1,10 @@
 import { React, Component } from 'react';
-import { Link } from "react-router-dom";
-import {
-    Typography, AppBar,
-    Card, CardActions, CardContent, CardMedia,
-    CssBaseline, Grid, Toolbar, Container, Button
-}
-    from '@mui/material';
+
 import Header from './Header';
 import SectionMain from './Section1';
 import BackToHome from './BackToHome';
 import MenuTop from './MenuTop'
+import Solution3 from './Solution3';
 
 
 
@@ -27,6 +22,7 @@ class Page3 extends Component {
                 <MenuTop />
                 <Header title={this.state.title} />
                 <SectionMain sectionContent={this.state.sectionContext} />
+                <Solution3 />
                 <BackToHome />
             </>
         );
