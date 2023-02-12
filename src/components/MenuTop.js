@@ -5,7 +5,8 @@ import {
     CssBaseline, Grid, Toolbar, Container, Button
 }
     from '@mui/material';
-    import { PhotoCamera } from '@mui/icons-material';
+import { PhotoCamera } from '@mui/icons-material';
+import { Link } from "react-router-dom";
 
 const MenuTop = () => {
     return (
@@ -15,10 +16,13 @@ const MenuTop = () => {
                 <Toolbar>
                     <PhotoCamera />
                     <Typography >
-                        Weekly Assignment
+                        <Link
+                            style={{ textDecoration: "none", color: "white" }}
+                            to={"/"}>Weekly Assignment
+                        </Link>
                     </Typography>
                 </Toolbar>
-            </AppBar>            
+            </AppBar>
         </>
     );
 };

@@ -10,6 +10,7 @@ import Header from './Header';
 import SectionMain from './Section1';
 import BackToHome from './BackToHome';
 import MenuTop from './MenuTop'
+import Solution2 from './Solution2';
 
 
 
@@ -18,9 +19,9 @@ class Page2 extends Component {
         title: "Answer No. 2",
         sectionContext: [
             { lineMsg: "Task No. 2	Complete below tasks using Hooks" },
-            { lineMsg: "• Create an array of object and update its second index" },
-            { lineMsg: "• Create an object, update it's 2 property values" },            
-            { lineMsg: "• Practice all datatypes for state variable" },
+            { lineMsg: "• Part 1: Create an array of object and update its second index" },
+            { lineMsg: "• Part 2: Create an object, update it's 2 property values" },            
+            { lineMsg: "• Part 3: Practice all datatypes for state variable" },
         ]
     }
     render() {
@@ -29,6 +30,7 @@ class Page2 extends Component {
                 <MenuTop />
                 <Header title={this.state.title} />
                 <SectionMain sectionContent={this.state.sectionContext} />
+                <Solution2 />
                 <BackToHome />
             </>
         );

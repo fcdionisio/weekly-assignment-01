@@ -19,7 +19,7 @@ class Page1 extends Component {
         title: "Answer No. 1",
         sectionContext: [
             { lineMsg: "Task No. 1" },
-            { lineMsg: "• Create a HOC that add random color to background of 2 component." },
+            { lineMsg: "• Create a HOC that add random color to background of 2 components." },
         ],
         component1: {
             name: "Component No. 1",
