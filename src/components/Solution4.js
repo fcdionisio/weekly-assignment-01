@@ -28,16 +28,20 @@ const arrTwo = [{
 const str = ['u', 'ec']
 const arrPartB = [{
     storageVal: 'u',
-     table: ['E', 'F']
-},{
+    table: ['E', 'F']
+}, {
     storageVal: 'data',
-     table: ['E', 'F']
+    table: ['E', 'F']
 }, {
     storageVal: 'ec',
     table: ['E']
 }]
 
+//Part C
+const arrPartC = [['E'], ['F']];
 
+//Part D
+const arrPartD = [['E', 'F'], [['F'], ['G']]];
 
 
 const Solution4 = () => {
@@ -52,23 +56,24 @@ const Solution4 = () => {
 
     const showPartB = () => {
         console.log("Result of Part B: ")
-        const output =lodash.pickBy(arrPartB,(value,key)=>{
-            return lodash.startsWith(key,"table");
-        })
+        const output = lodash.map(arrPartB, 'table');
 
         console.log(output);
     }
 
     const showPartC = () => {
         console.log("Result of Part C: ")
+        const output = lodash.flatten(arrPartC);
 
-        //console.log(output);
+        console.log(output);
     }
 
     const showPartD = () => {
         console.log("Result of Part D: ")
+        const output = lodash.chain(arrPartD).uniq().value();
 
-        //console.log(output);
+        console.log(output);
+
     }
 
     const showPartE = () => {
